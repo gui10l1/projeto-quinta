@@ -1,0 +1,127 @@
+:root {
+  --blue: #3b4ea1;
+  --gray: #666767;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, textarea {
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  display: flex;
+  height: 70px;
+
+  background-color: var(--blue);
+}
+
+#header > ul {
+  color: #fff;
+
+  display: flex;
+
+  flex: 1;
+}
+
+#header > ul > li {
+  line-height: 70px;
+  list-style: none;
+  padding: 0 20px;
+}
+
+#header > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+
+  display: flex;
+  justify-content: flex-start;
+
+  position: relative;
+
+  font-size: 22px;
+}
+
+#header > ul > li > a::before {
+  content: '';
+
+  position: absolute;
+  
+  background-color: #fff;
+
+  top: 50%;
+  transform: translateY(calc(-50% + 14px));
+
+  height: 2px;
+  width: 0%;
+
+  transition: width .2s;
+}
+
+#header > ul > li > a:hover::before {
+  width: 100%;
+}
+
+#header > div {
+  height: 100%;
+}
+
+#header > div > form {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding-right: 20px;
+}
+
+#header > div > form > div {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 7.5px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 15px;
+}
+
+#header > div > form > div > input {
+  flex: 1;
+}
+
+#footer {
+  background-color: var(--blue);
+
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer > span {
+  font-size: 18px;
+  font-size: italic;
+  color: #fff;
+}

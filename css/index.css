@@ -1,0 +1,100 @@
+#first {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+#first > header {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+#first > header > h1 {
+  font-size: 32px;
+  color: var(--blue);
+  text-align: center;
+  max-width: max-content;
+  border-bottom: 2px solid var(--blue);
+  margin: 0 auto;
+}
+
+#first p {
+  color: #151515;
+}
+
+#first > main {
+  padding: 0 20px;
+}
+
+#first > main > * + * {
+  margin-top: 20px;
+}
+
+#first > main p {
+  font-size: 18px;
+
+  text-align: justify;
+}
+
+#first > main > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+#first > main > div > img {
+  max-width: 32%;
+  height: auto;
+
+  border-radius: 4px;
+}
+
+#first > main > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+}
+
+#first > main > div > div > p {
+  margin-bottom: 40px;
+}
+
+#first > footer {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#first > footer img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 4px;
+
+  transition: transform .2s, margin .2s;
+}
+
+#first > footer img:hover {
+  transform: scale(1.1);
+  margin: 20px 0;
+}
+
+#first > footer > p {
+  font-size: 18px;
+
+  text-align: justify;
+}
+
+#first > footer > p + p {
+  margin-top: 20px;
+}
+
+.separator {
+  margin: 0 auto;
+
+  max-width: 25%;
+
+  border-top: 3px solid rgba(0, 0, 0, .25);
+
+  background-color: #f8f8f8;
+}
